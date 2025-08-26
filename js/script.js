@@ -15,8 +15,8 @@ btnLogin.addEventListener("click", function (e) {
   // console.log(mobNumValueConv, pinNumValueConv)
 
   if (mobNumValueConv === mobileNum && pinNumValueConv === pinNum) {
-    console.log("matched");
+    window.location.href="./home.html"
   } else {
-    console.log("not matched");
+    alert('Invalid Credentials')
   }
 });
