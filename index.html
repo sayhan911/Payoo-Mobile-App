@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo Mobile App</title>
     <!-- daisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- google font -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-        </style>
-</head>
-<body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center">
-    <div class="h-[130px] w-[350px] bg-[url(./assets/assets/bg.png)] bg-cover flex justify-center items-center">
-        <img src="assets/assets/Group.png" alt="">
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+    </style>
+  </head>
+  <body
+    class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center"
+  >
+    <div
+      class="h-[130px] w-[350px] bg-[url(./assets/assets/bg.png)] bg-cover flex justify-center items-center"
+    >
+      <img src="assets/assets/Group.png" alt="" />
     </div>
-    <form class="w-[400px] bg-white rounded-2xl p-7 font-[outfit]">
-        <div class="mt-1">
-            <label for="" class="text-[16px] text-[#08080] font-medium">Mobile Number</label><br>
-            <input type="text" placeholder="Enter your number" id="mobile-num" class="input bg-[#f4f5f7] mt-3 border-none rounded-3xl pl-[20px] transform transition ease-in-out duration-300 hover:scale-102 hover:bg-blue-50 hover:shadow-lg focus:outline-none" />
-        </div>
-        <div class="mt-5">
-            <label for="" class="text-[16px] text-[#080808] font-medium">4 Digit Pin</label><br>
-            <input type="text" placeholder="Enter 4 digit pin" id="pin-num" class="input bg-[#f4f5f7] mt-3 border-none rounded-3xl pl-[20px] transform transition ease-in-out duration-300 hover:scale-102 hover:bg-blue-50 hover:shadow-lg focus:outline-none" />
-        </div>
-        <button id="btn-login" class="btn bg-[#0874f2] text-white mt-7 w-full rounded-3xl mb-2 font-semibold transform transition ease-in-out duration-300 hover:scale-102 hover:bg-violet-600">Login</button>
+    <form
+      id="login-form"
+      class="w-[400px] bg-white rounded-2xl p-7 font-[outfit]"
+    >
+      <div class="mt-1">
+        <label for="" class="text-[16px] text-[#08080] font-medium"
+          >Mobile Number</label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter your number"
+          id="mobile-num"
+          class="input bg-[#f4f5f7] mt-3 border-none w-full rounded-3xl pl-5 transform transition ease-in-out duration-300 hover:scale-102 hover:bg-blue-50 hover:shadow-lg focus:outline-none"
+        />
+      </div>
+      <div class="mt-5">
+        <label for="" class="text-[16px] text-[#080808] font-medium"
+          >4 Digit Pin</label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter 4 digit pin"
+          id="pin-num"
+          class="input bg-[#f4f5f7] mt-3 border-none w-full rounded-3xl pl-5 transform transition ease-in-out duration-300 hover:scale-102 hover:bg-blue-50 hover:shadow-lg focus:outline-none"
+        />
+      </div>
+      <button
+        id="btn-login"
+        class="btn bg-[#0874f2] text-white mt-7 mb-2 w-full rounded-3xl font-semibold transform transition ease-in-out duration-300 hover:scale-102 hover:bg-violet-600 focus:scale-102 focus:bg-violet-600
+        active:scale-105 active:bg-violet-700"
+      >
+        Login
+      </button>
     </form>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

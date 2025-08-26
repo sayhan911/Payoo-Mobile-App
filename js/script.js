@@ -19,4 +19,7 @@ btnLogin.addEventListener("click", function (e) {
   } else {
     alert('Invalid Credentials')
   }
+  // ফর্ম ফিল্ড ফাঁকা করা
+  document.getElementById("mobile-num").value = "";
+  document.getElementById("pin-num").value = "";
 });
