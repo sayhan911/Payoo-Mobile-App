@@ -15,7 +15,7 @@ btnLogin.addEventListener("click", function (e) {
   // console.log(mobNumValueConv, pinNumValueConv)
 
   if (mobNumValueConv === mobileNum && pinNumValueConv === pinNum) {
-    window.location.href="./home.html"
+    window.location.href="./add-money.html"
   } else {
     alert('Invalid Credentials')
   }
